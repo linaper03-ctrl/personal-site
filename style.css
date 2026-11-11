@@ -1,10 +1,12 @@
+/* Generella inställningar */
 body {
   margin: 0;
   font-family: sans-serif;
-  background-color: black;
+  color: #ffffff;
 }
 
-/* The Pixi canvas sits behind the text */
+/* Pixi-canvasen. Top och left på 0 gör att den börjar uppifrån vänstra hörnet.
+/* z-index: -1; gör att canvasen hamnar bakom allat annat innehåll */
 canvas {
   position: fixed;
   top: 0;
@@ -12,7 +14,53 @@ canvas {
   z-index: -1;
 }
 
+/* Inställningar för huvudinnehållet */
+/* flex direction row gör så att vänster- och  högerdivarna hamnar i rad, bredvid varandra */
 main {
-  max-width: 40rem;
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
   padding: 2rem;
+}
+
+/* Inställningar för bilderna i högerdiven */
+/* border radius gör rundade hörn */
+.bilderHöger {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  border: 1px solid #ed1b76;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+/* bildernas storlek och rundade hörn med border radius */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+/* Lägger in typsnitt för brödtext*/
+@font-face {
+  font-family: breadFont;
+  src: url(breadFont.ttf);
+}
+
+/* Lägger in Squid Game-typsnittet */
+@font-face {
+  font-family: squidGameFont;
+  src: url(squidGameFont.ttf);
+}
+
+
+/* Inställningar för mindre rubriker och introduktionsstycket*/
+h2 {
+  font-family: squidGameFont;
+  color: #ed1b76;
+}
+
+.introduktion,
+h1 {
+  font-family: breadFont;
 }
