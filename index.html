@@ -11,16 +11,19 @@
 <body>
   <main>
 
-    <!-- Div för högerdelen av sidan med placeholdr-bilder och text -->
-
+    <!-- Titel och undertitel -->
     <h1>Red Light <span style="color: rgb(0, 255, 115);">Green Light</span></h1>
     <h4>An Interactive Installation Game (2026)</h4>
     <h5>By Lina Persson and Klara Johansson, interaction design students at Södertörn University. </h5>
 
+    <!-- Div för själva innehållet på sidan -->
     <div class="innehåll">
+      <!-- Div för den övre delen av sidan med beskrivningen och videon -->
       <div class="textOchVideo">
-        <p>Red Light Green Light is an interactive two-player game inspired by the TV series Squid Game. Our vision was
-          to create an immersive, fun experience where the physical body was used as a part of the installation. Just
+        <p>
+          <i><b>Red Light Green Light</b></i> is an interactive two-player game inspired by the TV series Squid Game.
+          Our vision was to create an immersive, fun experience where the physical body was used as a part of the
+          installation. Just
           like in the series, the goal of Red Light Green Light is to move across the playing field, running when a doll
           sings and standing still when she's silent. With a web camera and an ml5 (MoveNet) body tracking model, the
           game registers human bodies, their physical location and movements to eliminate moving players when the doll
@@ -28,14 +31,12 @@
           feedback on the state of the game. To play, both players must lift their hands above their heads. The player
           who first reaches and presses the button without getting eliminated wins.
         </p>
-        <video controls width="20%" height="auto">
-          <source src="IMG_8397.mp4" type="video/mp4">
+        <video controls width="50%" height="100%">
+          <source src="video.mp4" type="video/mp4">
         </video>
       </div>
 
-
-      <!-- Varje bild och tillhörande text ligger i egna divar, inuti en större div. Detta för att kunna stylea dem i CSS så som jag vill -->
-
+      <!-- Divar för de mindre bilderna, en för den övre raden och en för den undre. -->
       <div class="övreBilder">
         <img src="1bild.jpg" alt="placeholder image just nu">
         <img src="2bild.jpg" alt="placeholder image just nu">

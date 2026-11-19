@@ -32,7 +32,7 @@ app.ticker.add(() => {
   }
 
   if (mouse.x < app.screen.width / 2) {
-    // Gör röda eller gröna prickar beroende på vilken sida av skärmen
+    // Gör röda eller gröna prickar beroende på vilken sida av skärmen som musen är på
     dots.fill("#4c0f2a");
   }
   else {
