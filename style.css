@@ -87,7 +87,7 @@ video {
   gap: 3rem;
 }
 
-/* bildernas storlek. Rundade hörn med border radius */
+/* bildernas storlek, samt rundade hörn med border radius */
 img {
   max-width: 30%;
   height: auto;
