@@ -30,6 +30,13 @@ app.ticker.add(() => {
       dots.circle(x, y, Math.max(1, 8 - distance / 30));
     }
   }
-  // Ger prickarna en färg
-  dots.fill("#4c0f2a");
+
+  if (mouse.x < app.screen.width / 2) {
+    // Gör röda eller gröna prickar beroende på vilken sida av skärmen
+    dots.fill("#4c0f2a");
+  }
+  else {
+    dots.fill("#0f4c13");
+  }
+
 });
